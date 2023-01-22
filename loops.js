@@ -82,19 +82,21 @@ for (var i = 0; i < myBooks.length; i++) {
 
 // Conceptual Session related problem
 
-var age = 23;
+var age = 18;
 var vacinatedCount = 2;
 var isVacinated = false;
 
 if (age > 20 && vacinatedCount == 2) {
-    // console.log('You can go Abroad');
+    console.log('You can go Abroad');
 }
-else if((age >= 15 && age < 20) && vacinatedCount == 2){
-    isVacinated = true;
-    console.log('Your two douj vacination is successful');
-}
-else if ((age >= 15 && age < 20) && isVacinated == false) {
+
+ if ((age >= 15 && age < 20) && vacinatedCount == 0) {
 console.log("Please, Go Hospital to take vacine");
+}
+
+ if((age >= 15 && age < 20) && vacinatedCount == 2){
+    isVacinated = true;
+    console.log('Your vacination is successful');
 }
 
 // Tour Related Problem
@@ -113,7 +115,7 @@ if (Tourbudget > 5000){
     }
 }
 else{
-    console.log('Sleeping is good for health !!!');
+    // console.log('Sleeping is good for health !!!');
 }
 
 
