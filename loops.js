@@ -15,7 +15,7 @@ else if( budget > 20000){
     console.log('puran Laptop kinbo');
 }
 else{
-    console.log('Gorib ar Mobile');
+    // console.log('Gorib ar Mobile');
 }
 
 // sorry ata loop na .. ata conditon ar silo..
@@ -42,9 +42,40 @@ for(var i = 581; i <=623; i+=2){
 
 // practice problem 33
 
-const learnedTopic = ['Js Fundamental' ,'variable','operator','array', 'conditionals', 'loops']
+var learnedTopic = ['Js Fundamental' ,'variable','operator','array', 'conditionals', 'loops']
 
 for(var i = 0; i< learnedTopic.length ; i++){
-    const topic = learnedTopic[i];
-    console.log(topic);
+    var topic = learnedTopic[i];
+    // console.log(topic);
+}
+
+// Practice problem 34
+
+var usedPhone = ['Nokia', 'samsong button','samsung j2', 'realme Norzo 30'];
+
+var i = 0;
+while(i < usedPhone.length){
+    // console.log(usedPhone[i]);
+    i++
+}
+
+// Practice 35 
+
+for(var i = 30; i <= 86; i++ ){
+    if(i>44){
+        break
+    }
+    // console.log(i);
+}
+
+// Practice 36
+
+const myBooks =  [123,250, 190, 380, 420, 45, 352, 198,100];
+
+for(var i = 0; i < myBooks.length ; i++){
+    var books = myBooks[i]
+    if(books < 200){
+        console.log(books);
+    }
+    
 }
