@@ -17,3 +17,34 @@ else if( budget > 20000){
 else{
     console.log('Gorib ar Mobile');
 }
+
+// sorry ata loop na .. ata conditon ar silo..
+
+// Problem solving 25
+
+for( var i = 1 ; i <=39 ; i++){
+    // console.log('Ajke amar mon valo nei');
+}
+
+// practice problem 29
+
+for(var i = 58 ; i <= 98 ; i++){
+    // console.log(i);
+}
+
+for(var i = 412 ; i <= 456; i+=2){
+    // console.log(i);
+}
+
+for(var i = 581; i <=623; i+=2){
+    // console.log(i);
+}
+
+// practice problem 33
+
+const learnedTopic = ['Js Fundamental' ,'variable','operator','array', 'conditionals', 'loops']
+
+for(var i = 0; i< learnedTopic.length ; i++){
+    const topic = learnedTopic[i];
+    console.log(topic);
+}
