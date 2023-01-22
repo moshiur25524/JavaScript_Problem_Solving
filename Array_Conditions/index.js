@@ -58,9 +58,9 @@ for (var i = 0; i < myFriends.length; i++) {
 // 1. You are given three numbers 13, 79, and 45. Write a program that will print the
 // largest number using if-else.
 
-const a = 13;
-const b = 79;
-const c = 45;
+var a = 13;
+var b = 79;
+var c = 45;
 
 if (a > b) {
     // console.log(a +' is the Largest Number ');
@@ -87,4 +87,15 @@ else if(side2 === side3 && side2 !== side1){
 }
 else{
     console.log('The triangle is not isoscles');
+}
+
+// Find Even or Odd Number 
+
+var num = 6;
+
+if( num % 2 == 0) {
+    console.log(num,' is an even Number');
+}
+else{
+    console.log(num , 'is an Odd Number');
 }
