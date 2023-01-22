@@ -29,6 +29,27 @@ const Jane = 95;
 const Peter = 56;
 const John = 40;
 
+var myFriends = [me, Tom, Jane, Peter, John];
+
+for(var i = 0; i < myFriends.length ; i++){
+    var friend = myFriends[i];
+    if(friend > 80){
+        console.log(friend, ' Get A Grade');
+    }
+  else if(friend > 60){
+        console.log(friend, ' Get B Grade');
+    }
+   else if(friend > 50){
+        console.log(friend, ' Get C Grade');
+    }
+   else if(friend <= 40){
+        console.log(friend, ' Get D Grade');
+    }
+    else{
+        console.log(friend, ' Get F Grade');
+    }
+}
+
 
 
 
@@ -59,8 +80,8 @@ const side2 = 8;
 const side3 = 8;
 
 if((side1 === side2 || side2 !== side3) && side1 !== side3){
-console.log('The Triangle is not an Isosceles');
+// console.log('The Triangle is not an Isosceles');
 }
 else{
-    console.log('The Triangle is an Isosceles');
+    // console.log('The Triangle is an Isosceles');
 }
