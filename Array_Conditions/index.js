@@ -31,22 +31,22 @@ const John = 40;
 
 var myFriends = [me, Tom, Jane, Peter, John];
 
-for(var i = 0; i < myFriends.length ; i++){
+for (var i = 0; i < myFriends.length; i++) {
     var friend = myFriends[i];
-    if(friend > 80){
-        console.log(friend, ' Get A Grade');
+    if (friend > 80) {
+        // console.log(friend, ' Get A Grade');
     }
-  else if(friend > 60){
-        console.log(friend, ' Get B Grade');
+    else if (friend > 60) {
+        // console.log(friend, ' Get B Grade');
     }
-   else if(friend > 50){
-        console.log(friend, ' Get C Grade');
+    else if (friend > 50) {
+        // console.log(friend, ' Get C Grade');
     }
-   else if(friend <= 40){
-        console.log(friend, ' Get D Grade');
+    else if (friend <= 40) {
+        // console.log(friend, ' Get D Grade');
     }
-    else{
-        console.log(friend, ' Get F Grade');
+    else {
+        // console.log(friend, ' Get F Grade');
     }
 }
 
@@ -62,26 +62,29 @@ const a = 13;
 const b = 79;
 const c = 45;
 
-if(a > b){
+if (a > b) {
     // console.log(a +' is the Largest Number ');
 }
 else if (b > c) {
     // console.log(b +' is the Largest Number ');
 }
-else{
+else {
     // console.log(c +' is the Largest Number ');
 }
 
 // 2. You are given a triangle with the sides 9, 8, 9. Write a program to check whether a
 // triangle is Isosceles or not using if-else.
 
-const side1 = 8;
-const side2 = 8;
-const side3 = 8;
+const side1 = 9;
+const side2 = 7;
+const side3 = 7;
 
-if((side1 === side2 || side2 !== side3) && side1 !== side3){
-// console.log('The Triangle is not an Isosceles');
+if (side1 === side2 && side1 !== side3) {
+    console.log('The Triangle is an Isosceles');
+}
+else if(side2 === side3 && side2 !== side1){
+    console.log('The Triange is also an Isoscles');
 }
 else{
-    // console.log('The Triangle is an Isosceles');
+    console.log('The triangle is not isoscles');
 }
