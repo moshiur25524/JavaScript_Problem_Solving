@@ -105,18 +105,47 @@ switch (signal) {
 
 // problem 1 (Multiplication table)
 
-function multi_Table(multi) {
-const iterate = 13
- const multiple = iterate * multi
-    console.log(iterate, 'X' , multi , '=', multiple);
+// function multi_Table(multi) {
+// const iterate = 13
+//  const multiple = iterate * multi
+//     console.log(iterate, 'X' , multi , '=', multiple);
+// }
+
+// for (i = 1; i <= 10; i++) {
+//     multi_Table(i)
+// }
+
+// problem 2 (make Lowercase)
+
+// function UpperCaseName(name){
+//     const convertedLowercase = name.toLowerCase()
+//     return convertedLowercase
+// }
+
+// const LowercaseName = UpperCaseName('MosHiur')
+// console.log(LowercaseName);
+
+// problem 3 (make full name)
+
+function fullName(firstName, lastName){
+    const name = firstName + ' ' + lastName;
+    return name;
 }
 
-for (i = 1; i <= 10; i++) {
-    multi_Table(i)
+const firstName = "Moshiur";
+const lastName = 'Rahman';
+
+const OutputName = fullName(firstName, lastName)
+console.log(OutputName);
+
+// Problem 4 (squre of a number)
+
+function squre(x){
+    return x*x
 }
 
-
-
+const squredValue = squre(6)
+console.log(squredValue);
 
 
 
