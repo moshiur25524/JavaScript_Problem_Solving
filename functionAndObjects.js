@@ -25,17 +25,20 @@ const average = make_avg(num1, num2, num3);
 // const averageInTwoDecimal = parseFloat(average.toFixed(2))
 // console.log('The average is:', averageInTwoDecimal);
 
-// practice problem 3
+// ----------------------practice problem 3-----------------
 
-const numbers = [12, 10, 5, 9, 35];
-for (i = 0; i < numbers.length; i++) {
-    const number = numbers[i]
-    // console.log(number);
-    const numberAverage = make_avgNumbers(number)
-}
-function make_avgNumbers(number) {
+// const numbers = [12, 10, 5, 9, 35];
+// for (i = 0; i < numbers.length; i++) {
+//     const number = numbers[i]
+//     let sum = 0
+//     number = number + sum;
 
-}
+//     // console.log(number);
+//     const numberAverage = make_avgNumbers(number)
+// }
+// function make_avgNumbers(number) {
+
+// }
 
 // practic problem 4
 
@@ -64,9 +67,9 @@ function odd_even() {
     }
 }
 
-odd_even()
+// odd_even()
 
-// Practic Problem 5
+// ------------------------Practic Problem 5-------------------
 
 // const signal = 'green'
 
@@ -83,7 +86,7 @@ odd_even()
 // Same Problem using Switch
 const signal = 'yellow'
 
-  switch (signal) {
+switch (signal) {
     case 'red':
         console.log("Don't Cross the road");
         break;
@@ -97,3 +100,23 @@ const signal = 'yellow'
         console.log('basay guma');
 
 }
+
+// -----------------------Module 19 Practice Problem--------------------
+
+// problem 1 (Multiplication table)
+
+function multi_Table(multi) {
+const iterate = 13
+ const multiple = iterate * multi
+    console.log(iterate, 'X' , multi , '=', multiple);
+}
+
+for (i = 1; i <= 10; i++) {
+    multi_Table(i)
+}
+
+
+
+
+
+
