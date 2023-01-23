@@ -58,19 +58,27 @@ for (var i = 0; i < myFriends.length; i++) {
 // 1. You are given three numbers 13, 79, and 45. Write a program that will print the
 // largest number using if-else.
 
-var a = 13;
-var b = 79;
-var c = 45;
+var a = 80;
+var b = 125;
+var c = 100;
 
 if (a > b) {
-    // console.log(a +' is the Largest Number ');
+    if(a > c){
+        console.log(a, 'is the largest number');
+    }
+    else{
+        console.log(c, 'is the largest number');
+    }
 }
-else if (b > c) {
-    // console.log(b +' is the Largest Number ');
+else{
+    if(b>c){
+        console.log(b, 'is the largest number');
+    }
+    else{
+        console.log(c, 'is the largest number');
+    }
 }
-else {
-    // console.log(c +' is the Largest Number ');
-}
+
 
 // 2. You are given a triangle with the sides 9, 8, 9. Write a program to check whether a
 // triangle is Isosceles or not using if-else.
