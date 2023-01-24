@@ -2,7 +2,7 @@
 
 // ---------------------inches to feet--------------
 
-function converter(inches){
+function converter(inches) {
     return inches / 12
 }
 
@@ -11,7 +11,7 @@ const feet = converter(84);
 
 // ------------------miles to kilometer------------------
 
-function distanceConverter(miles){
+function distanceConverter(miles) {
     return miles * 1.60934;
 }
 
@@ -20,11 +20,11 @@ const kilo = distanceConverter(3);
 
 // Odd or even related
 
-function check(number){
-    if(number % 2 == 0){
+function check(number) {
+    if (number % 2 == 0) {
         return true
     }
-    else{
+    else {
         return false
     }
 }
@@ -36,10 +36,10 @@ const result = check(21)
 
 const array1 = [12, 45, 35, 58, 33];
 
-function sumArray(array){
+function sumArray(array) {
     let sum = 0;
 
-    for(let i = 0; i < array.length; i++){
+    for (let i = 0; i < array.length; i++) {
         const numb = array[i];
         sum = sum + numb
     }
@@ -51,13 +51,13 @@ sumArray(array1)
 
 // ------------------get the sum of the Even numbers from an array-----------------
 
-const array2 = [5, 7 , 8 ,10, 45, 30];
+const array2 = [5, 7, 8, 10, 45, 30];
 
-function findEvenSum(array2){
-let sum = 0
-    for(let i = 0; i < array2.length ; i++){
+function findEvenSum(array2) {
+    let sum = 0
+    for (let i = 0; i < array2.length; i++) {
         const numb2 = array2[i]
-        if(numb2 % 2 === 0){
+        if (numb2 % 2 === 0) {
             sum = sum + numb2
         }
     }
@@ -69,11 +69,11 @@ findEvenSum(array2)
 
 // ------------get the sumo of odd numbers from an array ---------------------
 
-function getSum(numberes){
+function getSum(numberes) {
     let sum = 0
-    for(let i = 0; i < numberes.length ; i++){
+    for (let i = 0; i < numberes.length; i++) {
         const element = array3[i]
-        if(element % 2 === 1){
+        if (element % 2 === 1) {
             sum = sum + element;
         }
     }
@@ -81,16 +81,16 @@ function getSum(numberes){
     return sum
 }
 
-const array3 =  [5, 7 , 8 ,10, 45, 30];
+const array3 = [5, 7, 8, 10, 45, 30];
 // getSum(array3)
 
 // ----------------------- Get all odd numbers from an array -----------------------
 
-function getOddNumber(numbers){
+function getOddNumber(numbers) {
     const oddNumbers = []
-    for(let i = 0; i < numbers.length; i++){
+    for (let i = 0; i < numbers.length; i++) {
         const element = numbers[i];
-        if(element % 2 !== 0){
+        if (element % 2 !== 0) {
             oddNumbers.push(element)
         }
     }
@@ -104,10 +104,10 @@ const oddNumbersSum = getSum(oddNumbers)
 
 // ----------------Factorial Numbers --------------------------
 
-function findFactorial(number){
+function findFactorial(number) {
     let fac = 1
-    for(let i = 1; i <=number ; i++){
-        fac = fac*i
+    for (let i = 1; i <= number; i++) {
+        fac = fac * i
     }
     return fac
 }
@@ -117,9 +117,9 @@ const Factorial = findFactorial(6)
 
 // -------------Factorial with whlie loop and decremental way-------------
 
-function findFactorialNumber(number){
+function findFactorialNumber(number) {
     let fac = 1;
-    for(let i = number; i>= 1; i--){
+    for (let i = number; i >= 1; i--) {
         fac = fac * i
     }
     return fac
@@ -127,3 +127,37 @@ function findFactorialNumber(number){
 
 const FactorialValue = findFactorialNumber(5)
 console.log(FactorialValue);
+
+// ------------------ Reverse a string and reverse a word in a sentence -----------------
+
+function reverseStirng(text) {
+    let reversed = '';
+    for (let i = text.length - 1; i >= 0; i--) {
+        const element = text[i];
+        reversed = reversed + element;
+        // console.log(element , reversed);
+    }
+    return reversed
+}
+
+const myStirng = 'I am a good boy';
+const reversed = reverseStirng(myStirng);
+// console.log(reversed);
+
+// Word Reverse
+
+function reverseWords(str) {
+    const words = str.split(' ');
+
+    let result = []
+    for (let i = words.length - 1; i >= 0; i--) {
+        const element = words[i];
+        result.push(element)
+    }
+    result = result.join(' ')
+    return result
+}
+
+const myString = 'I am a good boy';
+const reversedWord = reverseWords(myStirng)
+console.log(reversedWord);
