@@ -113,4 +113,17 @@ function findFactorial(number){
 }
 
 const Factorial = findFactorial(6)
-console.log(Factorial);
+// console.log(Factorial);
+
+// -------------Factorial with whlie loop and decremental way-------------
+
+function findFactorialNumber(number){
+    let fac = 1;
+    for(let i = number; i>= 1; i--){
+        fac = fac * i
+    }
+    return fac
+}
+
+const FactorialValue = findFactorialNumber(5)
+console.log(FactorialValue);
