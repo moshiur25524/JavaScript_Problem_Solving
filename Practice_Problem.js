@@ -61,14 +61,19 @@ console.log("Rectangle Area", area);
 // problem 5 (Find the second largest number from an array)
 
 function secondLargestNumber(numbers) {
-    let largest = numbers[0]
+    let first = -1;
+    let second = -1
     for (let i = 0; i < numbers.length; i++) {
         const element = numbers[i];
-        if (element > largest) {
-            largest = element;
+        if (element > first) {
+            second = first;
+            first = element
+        }
+        else if( element > second && element != first){
+            second = element
         }
     }
-    return largest;
+    return second;
 }
 
 const myArray = [25, 36, 85, 75, 49, 67];
