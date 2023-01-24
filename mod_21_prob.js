@@ -1,16 +1,55 @@
 
 // Who will get the Delicious cake among three (Jim , Della, Chinku)
 
-function GotCake(x, y, z){
-    if(x > y && x>z){
-        console.log('Jim is Topper ');
+// fist way
+// function GotCake(x, y, z){
+//     if(x > y && x>z){
+//         console.log('Jim is will get the cake ');
+//     }
+//     else if(y>z && y>x){
+//         console.log('Della is will get the cake');
+//     }
+//     else{
+//         console.log('Chinku is will get the cake');
+//     }
+// }
+
+// GotCake(95, 96, 89)
+
+// second way
+
+const Jim = 85;
+const Della = 89;
+const Chinku = 95;
+
+const getCake = Math.max(Jim, Della, Chinku)
+console.log(getCake);
+
+if(Jim === getCake){
+    console.log('Jim will get the cake');
+}
+else if( Della === getCake){
+    console.log('Della will get the cake');
+}
+else{
+    console.log("Chinku will get the cake");
+}
+
+// HomeWork: Problem (find the lowest number among three numbers)
+
+function lowestNumber(x, y, z){
+    if(x<y && x< z){
+        console.log(x, 'is the lowest Nubmer');
     }
-    else if(y>z){
-        console.log('Della is Topper');
+    else if( y<x && y<z){
+        console.log(y, 'is the lowest Number');
     }
     else{
-        console.log('Chinku is Topper');
+        console.log(z, 'is the lowest Number');
     }
 }
 
-GotCake(95, 96, 89)
+// lowestNumber(96, 75, 98);
+
+const leastNumber = Math.min(35, 95, 12);
+console.log(leastNumber, 'is the lowest Number');
