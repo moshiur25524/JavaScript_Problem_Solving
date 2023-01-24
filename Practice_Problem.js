@@ -33,7 +33,7 @@ function lowestNumber(x, y, z) {
 
 lowestNumber(9, 6, 8);
 
-// problem 3 (Find the average with the array value and return as a function)
+// problem 3 (Find the average from the array value and return as a function)
 
 function averageOfArray(num) {
     let sum = 0;

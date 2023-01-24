@@ -43,4 +43,20 @@ function findOddSum(numbers) {
 
 const OddArray = [5, 7, 8, 10, 45, 30];
 const OddSum = findOddSum(OddArray)
-console.log('The of the Odd numbers is:', OddSum);
+console.log('The sum of the Odd numbers is:', OddSum);
+
+// More Problem solving......
+
+// Problem 4 (Check Leap Year and return true and false through function)
+// Problem 5 (Check the age odd or even and retun ture and false through function)
+// Problem 6 (Convert Hour to seconds)
+// Problem 7 (Calculate the interest of a Bank)
+
+function CalculateInterest(principle, rate, year){
+    rate = rate * 0.01
+    return principle * rate * year;
+}
+
+const interest = CalculateInterest(500, 5, 2);
+console.log("The Interest of money is: ", interest);
+
