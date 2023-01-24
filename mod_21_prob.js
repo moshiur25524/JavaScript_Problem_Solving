@@ -52,4 +52,44 @@ function lowestNumber(x, y, z){
 // lowestNumber(96, 75, 98);
 
 const leastNumber = Math.min(35, 95, 12);
-console.log(leastNumber, 'is the lowest Number');
+// console.log(leastNumber, 'is the lowest Number');
+
+//----------------------------- Problem 3 (..... Who is the Tallest.....)------------------------
+
+// first way
+
+function maxInAnArray(numbers){
+    let largest = numbers[0]
+    for( let i = 0; i < numbers.length ; i++){
+        const element = numbers[i]
+        // console.log(element);
+        if(element > largest){
+            largest = element
+        }
+    }
+    return largest
+}
+
+const heightArr = [125, 564, 356, 254, 896];
+
+const result = maxInAnArray(heightArr)
+// console.log(result, 'is the largest number');
+
+// HomeWork: write a function to get the lowest number from an array
+
+function getLargestNumber(ArrNumbers){
+
+    let lowest = ArrNumbers[0]
+    for(let i = 0; i < ArrNumbers.length; i++){
+        const element = ArrNumbers[i];
+        if(element< lowest){
+            lowest = element
+        }
+        // console.log(element);
+    }
+    return lowest
+}
+
+const Arr2 = [45, 68, 19, 79, 38, 30];
+const lowestValue = getLargestNumber(Arr2)
+console.log(lowestValue, 'is the lowest Number');
