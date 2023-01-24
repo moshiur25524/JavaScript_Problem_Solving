@@ -92,4 +92,31 @@ function getLargestNumber(ArrNumbers){
 
 const Arr2 = [45, 68, 19, 79, 38, 30];
 const lowestValue = getLargestNumber(Arr2)
-console.log(lowestValue, 'is the lowest Number');
+// console.log(lowestValue, 'is the lowest Number');
+
+// Reverse the characters of a word
+
+const myname = 'Moshiur';
+const splitedName = myname.split('');
+const reversedName = splitedName.reverse();
+const joinName = reversedName.join('')
+// console.log(joinName);
+
+// Reverse the words of a sentene
+
+const aboutMe = 'I am React Developer';
+const splitedSentence = aboutMe.split(' ');
+const reverseSentence = splitedSentence.reverse();
+const joinTheSentence = reverseSentence.join(' ')
+
+// console.log(joinTheSentence);
+
+// ----------------------- Fibonacci Series ------------------------
+
+const fibo = [0, 1];
+let nextFibo = 1
+for(let i = 2; i <=10 ; i++){
+   fibo[i] = fibo[i-1] + fibo[i-2]
+}
+
+console.log(fibo);
