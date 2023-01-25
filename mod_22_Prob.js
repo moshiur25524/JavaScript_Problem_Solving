@@ -55,7 +55,7 @@ function cheapestPhone(phones) {
 }
 
 const lowPricePhone = cheapestPhone(phones)
-console.log('The cheap phone is:', lowPricePhone);
+// console.log('The cheap phone is:', lowPricePhone);
 
 //------------------ Caltulate the total Price of the products from shopping cart--------------
 
@@ -69,8 +69,8 @@ const shoppingCart = [
 
 function countTotalPrice(products) {
     let Total = 0;
-    for (let i = 0; i < shoppingCart.length; i++) {
-        const product = shoppingCart[i];
+    for (let i = 0; i < products.length; i++) {
+        const product = products[i];
         const price = product.price * product.quantity
         Total = Total + price
     }
@@ -79,3 +79,44 @@ function countTotalPrice(products) {
 
 const totalPrice = countTotalPrice(shoppingCart);
 console.log('Total Cart Price:', totalPrice);
+
+// ------------------ Multi layer discount price calculation -------------------------
+
+// 1. if number of tickets is less than 100,per ticket Price is : 100 tk
+// 2. if number of tickets is more than 100 and less than 200 then for first 100 tickets price 100 and Rest tickets price will be 90 tk
+// 1. if number of tickets is more than 200 ,per ticket Price is : 
+
+    // first 100 ---> 100 tk
+    // 101-200 ---> 90tk
+    // 200+ ---> 70tk
+
+
+function ticketsPrice(ticketQuantity){
+    const first100Rate = 100;
+    const second200Rate = 90;
+    const restRate = 70;
+
+    if(ticketQuantity <= 100){
+        const price = ticketQuantity * first100Rate;
+        return price
+    }
+    else if(ticketQuantity <=200){
+        const first100Price = 100 * first100Rate;
+        const restTicketsQuantity = ticketQuantity - 100;
+        const restTicketsPrice =  restTicketsQuantity * second200Rate;
+        const totalPrice = restTicketsPrice + first100Price;
+        return totalPrice
+    }
+    else{
+      const first100Price = 100 * first100Rate;
+      const second200Price = 100 * second200Rate;
+      const restTicketsQuantity = ticketQuantity - 200;
+      const restTicketsPrice = restTicketsQuantity * restRate;
+      const totalPrice = first100Price + second200Price + restTicketsPrice;
+      return totalPrice;
+    }
+
+}
+
+const PriceTotal = ticketsPrice(220)
+console.log('Total Tickets Price: ',PriceTotal);
