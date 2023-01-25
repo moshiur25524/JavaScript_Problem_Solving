@@ -166,3 +166,40 @@ function positiveNumbers(numbers){
 
 const positive = positiveNumbers(mixedArray);
 console.log(positive);
+
+// Factorial 
+
+function factorail(number){
+    let fac = 1
+    for(let i = 1; i <= number ; i++){
+        fac = fac * i 
+    }
+    return fac
+}
+
+const factorialValue = factorail(5);
+console.log('The Factorial is: ', factorialValue);
+
+// Mullar Dam
+
+function mullarDam(quantity){
+    const first2kgPerMulla = 30;
+    const restPerMulla = 25;
+    if(quantity < 0){
+        return 'Please enter a Positive value'
+    }
+    else if (quantity <= 2){
+        const totalPrice = quantity * first2kgPerMulla;
+        return totalPrice;
+    }
+    else{
+        const fists2kgPrice = 2 * first2kgPerMulla;
+        const restQuantity = quantity - 2;
+        const restPrice = restQuantity * restPerMulla;
+        const totalPrice = fists2kgPrice + restPrice;
+        return totalPrice
+    }
+}
+
+const TotalCost = mullarDam(-5);
+console.log("The Price of Mulla :", TotalCost);
